@@ -1,0 +1,33 @@
+.button {
+  cursor: pointer;
+  width: 400px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+
+.button:active {
+  background-color: rgb(129, 128, 194);
+}
+
+.input {
+  margin: 0 auto;
+  width: 400px;
+  max-width: 700px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 15px 30px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: rgb(226, 240, 247);
+}
