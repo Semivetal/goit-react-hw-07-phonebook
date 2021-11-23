@@ -11,7 +11,7 @@ import {
 } from "./contacts-actions";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.baseURL = "https://619a3f5a9022ea0017a7b0a2.mockapi.io/";
 
 export const fetchContacts = () => (dispatch) => {
   dispatch(fetchContactsRequest());
@@ -41,6 +41,6 @@ export const deleteContact = (id) => (dispatch) => {
 
   axios
     .delete(`/contacts/${id}`)
-    .then(({ id }) => dispatch(deleteContactsSuccess(id)))
+    .then(() => dispatch(deleteContactsSuccess(id)))
     .catch((error) => dispatch(deleteContactsError(error)));
 };
